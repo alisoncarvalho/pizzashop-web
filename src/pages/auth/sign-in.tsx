@@ -39,7 +39,11 @@ export function SignIn() {
 
   return (
     <div className="p-8">
-      <Button asChild className="absolute right-8 top-8  ">
+      <Button
+        variant={'secondary'}
+        asChild
+        className="absolute right-8 top-8  "
+      >
         <Link to="/signup">Novo estabelecimento</Link>
       </Button>
       <div className="flex w-[350px] flex-col justify-center gap-6 ">
@@ -55,7 +59,7 @@ export function SignIn() {
         <form
           onSubmit={handleSubmit(handleSignIn)}
           action=""
-          className="space-y-8"
+          className="space-y-4"
         >
           <div className="space-y-2">
             <Label htmlFor="email">Seu e-mail </Label>
